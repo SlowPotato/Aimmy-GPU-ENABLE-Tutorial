@@ -14,9 +14,12 @@
 
 6. https://developer.nvidia.com/cuda-11-8-0-download-archive    and
 
-   https://developer.nvidia.com/rdp/cudnn-archive     =======>  Download cuDNN v8.9.6 (November 1st, 2023), for CUDA 11.x
+   https://developer.nvidia.com/rdp/cudnn-archive    [Download cuDNN v8.9.6 (November 1st, 2023), for CUDA 11.x]
 
-   Or you can just download the files from my Google Drive:   https://drive.google.com/drive/folders/1x6EawdDiXEKicf6b8afnzMBNInx_EpxO?usp=drive_link
+   ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/2d373454-5fb4-48b3-a7e7-e2c8a3699764)
+
+
+   Or you can just download the cudNN v8.9.6 files from my Google Drive:   https://drive.google.com/drive/folders/1x6EawdDiXEKicf6b8afnzMBNInx_EpxO?usp=drive_link
 
 Once you have folder those downloaded < bin, lib, include > click on your Windows key, ![adadsdasdasdsdpng](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cb9b05c2-2d05-4f6e-bc20-258694ca1b90)
 
@@ -175,6 +178,8 @@ Press ENTER
 Now we are in the Directory of the Training Folder paste yolo command: 
 
 yolo task=detect mode=train imgsz=640 data=data.yaml epochs=1000 batch=16 name=             *input a name*
+
+!!NOTE: The higher the epoch the more GPUMem you will consume, therefore gameplays will be cut to 30FPS rendering gameplay unplayable so recommend no gampeplays while training.!!
 
 Once that starts you should get GPUMem usage as such.
 
