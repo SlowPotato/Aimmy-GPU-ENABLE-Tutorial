@@ -1,18 +1,20 @@
 # Installing Aimmy with *GPU-ENABLE* Tutorial ==> Nvidia GPU ONLY
 
-1. https://github.com/Babyhamsta/Aimmy/releases/download/v1.3.0/Aimmy1_3_0.zip       ---- EXTRACT to DESKTOP as a single Folder keeping all Contents in the Extracted folder ----
+1. https://github.com/Babyhamsta/Aimmy/releases/download/v1.3.0/Aimmy1_3_0.zip       ---- EXTRACT to DESKTOP as a single Folder keeping all Contents in the Extracted folder ---
+
+2. There are newer versions, so download the lastest one.
 
 	Download these also: "   https://github.com/Babyhamsta/Aimmy/tree/master/Universalv3_web_model  "      ---- These Master files will be needed later-----
 
-2. https://aka.ms/vs/17/release/vc_redist.x64.exe
+3. https://aka.ms/vs/17/release/vc_redist.x64.exe
 
-3. https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.14-windows-x64-installer
+4. https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.14-windows-x64-installer
 
-4. https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
+5. https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
 
-5. https://www.anaconda.com/download  ==> *make your PATH is Enable with Python before completing install*
+6. https://www.anaconda.com/download  ==> *make your PATH is Enable with Python before completing install*
 
-6. https://developer.nvidia.com/cuda-11-8-0-download-archive    and
+7. https://developer.nvidia.com/cuda-11-8-0-download-archive    and
 
    https://developer.nvidia.com/rdp/cudnn-archive    [Download cuDNN v8.9.6 (November 1st, 2023), for CUDA 11.x]
 
