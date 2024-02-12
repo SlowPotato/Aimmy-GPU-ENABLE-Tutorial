@@ -12,7 +12,9 @@
 
 5. https://www.anaconda.com/download  ==> *make your PATH is Enable with Python before completing install*
 
-6. https://developer.nvidia.com/cuda-11-8-0-download-archive    and     https://developer.nvidia.com/rdp/cudnn-archive     =======>  Download cuDNN v8.9.6 (November 1st, 2023), for CUDA 11.x
+6. https://developer.nvidia.com/cuda-11-8-0-download-archive    and
+
+   https://developer.nvidia.com/rdp/cudnn-archive     =======>  Download cuDNN v8.9.6 (November 1st, 2023), for CUDA 11.x
 
    Or you can just download the files from my Google Drive:   https://drive.google.com/drive/folders/1x6EawdDiXEKicf6b8afnzMBNInx_EpxO?usp=drive_link
 
