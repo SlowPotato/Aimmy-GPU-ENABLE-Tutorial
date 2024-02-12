@@ -21,7 +21,7 @@
 
    Or you can just download the cudNN v8.9.6 files from my Google Drive:   https://drive.google.com/drive/folders/1x6EawdDiXEKicf6b8afnzMBNInx_EpxO?usp=drive_link
 
-Once you have folder those downloaded < bin, lib, include > click on your Windows key, ![adadsdasdasdsdpng](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cb9b05c2-2d05-4f6e-bc20-258694ca1b90)
+Once you have these folders downloaded < bin, lib, include > click on your Windows key, ![adadsdasdasdsdpng](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cb9b05c2-2d05-4f6e-bc20-258694ca1b90)
 
 Open File Explore and go into you C: and locate *NVIDIA GPU COMPUTING TOOLKIT*
 
