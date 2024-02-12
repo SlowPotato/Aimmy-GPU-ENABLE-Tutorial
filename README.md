@@ -179,9 +179,9 @@ Now we are in the Directory of the Training Folder paste yolo command:
 
 yolo task=detect mode=train imgsz=640 data=data.yaml epochs=1000 batch=16 name=             *input a name*
 
-!!NOTE: The higher the epoch the more GPUMem you will consume, therefore gameplays will be cut to 30FPS rendering gameplay unplayable so recommend no gampeplays while training.!!
+!!NOTE: The higher the epoch the more GPU_Mem you will consume, therefore gameplays will be cut to 30FPS rendering gameplay unplayable so recommend no gampeplays while training.!!
 
-Once that starts you should get GPUMem usage as such.
+Once that starts you should get GPU_Mem usage as such.
 
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/a191f7b3-122c-412f-b6fe-8dd917eedeeb)
 
