@@ -86,7 +86,7 @@ Now create 2 more folders and name them "images" and "labels"
 
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/1514eb9e-9ada-4d88-8a0e-3b223f2bd2ff)
 
-Within the "images" and "labels" folder create 2 more folders and name them "train" and "val"
+Within the "images" and "labels" folder create 2 more folders and name them "train" and "val" each.
 
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/f5566606-71e5-4914-b64f-7a3977788d74)
 
