@@ -59,9 +59,11 @@ see if CUDA PATH and CUDA PATH 11.8 are in the System Variables if they are you 
 8. *Anoconda*
 Run Command
     - conda install -c conda-forge ultralytics
+      
    (This will take Approx 5-10mins)
    
 	  - conda install -c pytorch -c nvidia -c conda-forge pytorch torchvision pytorch-cuda=11.8 ultralytics
+      
     (This will take Approx 5-20mins)
 
 Once that is done we can move onto creating the "Training Folder"
