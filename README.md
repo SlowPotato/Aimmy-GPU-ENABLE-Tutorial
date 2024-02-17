@@ -243,7 +243,7 @@ best.onnx will be generated in the "Weights Folder" which can now be rename for 
 
 Drag and drop onnx file into Aimmy Folder-->bin-->model.
 
-CONGRATZ! You have made your very first ONNX file! Now go test it out in-game and refer others who has similar isues or questions, to this page if this helped you.
+CONGRATZ! You have made your very first ONNX file! Now go test it out in-game and refer others who has similar issues or questions, to this page if this helped you.
 
 
 Any issue feel free to DM discord:  MentalEngineer#4729
