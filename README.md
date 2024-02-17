@@ -12,9 +12,15 @@
 
 5. https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
 
-6. https://www.anaconda.com/download  ==> *make your PATH is Enable with Python before completing install*
 
-7. https://developer.nvidia.com/cuda-11-8-0-download-archive
+
+   
+
+6. https://www.anaconda.com/download  ==> *make your PATH Enable with Python before completing install*
+
+   ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
+
+8. https://developer.nvidia.com/cuda-11-8-0-download-archive
 
     and
 
@@ -97,9 +103,10 @@ Now create 2 more folders and name them "images" and "labels"
 
 Within the "images" Folder create two new Folders named "train" and "val".
 
-Within the "labels" Folder create 2 new Folders named "train" and "val".
-
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/f5566606-71e5-4914-b64f-7a3977788d74)
+
+Within the "labels" Folder create 2 new Folders named "train" and "val".
+![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b81049d3-2f1e-447d-bd1f-805f0cebddd0)
 
 Now open the data.yaml file as a .txt to edit.
 
@@ -121,6 +128,8 @@ Launch " AimmyWPF " i run this as Admin -- you don't have to though.
 Select a "keybind" we will be using this keybind to take screenshots of gameplay
 
 Go to " Settings" - Turn " "ON-Blue" " Collect Data While Playing " - - - will OVERLAY and allow you to snap screenshots everytime "keybind" is pressed,
+
+![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/8d8ec750-488a-4fb8-b96f-df4c6172119a)
 
 Launch your Game Client and play a few games *approx 15mins-1 hour of game play * 
 
@@ -159,6 +168,8 @@ Copy all and drag and drop them into the drop bin.
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/6dda430a-4aa4-4565-b8f9-9cda0cc2b94d)
 
 This will make labeling enemy targets on images a bit easier. Place boxes on all targets on all images and once completed.
+![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/0c07d8f1-5e19-4744-84dc-cc97d4e8e769)
+
 
 Go to "Actions" and "Export Annotations"
 
