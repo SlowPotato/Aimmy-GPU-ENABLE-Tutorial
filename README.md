@@ -20,7 +20,7 @@
 
    ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
 
-8. https://developer.nvidia.com/cuda-11-8-0-download-archive
+7. https://developer.nvidia.com/cuda-11-8-0-download-archive
 
     and
 
@@ -52,34 +52,46 @@ Type "edit the system environment variables" on windows search and select "envir
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/e11c0e41-9146-4f3b-bc42-0d07b8c1ca32)
 
 see if CUDA PATH and CUDA PATH 11.8 are in the System Variables if they are you should be good to proceed.
+
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/fefba9a1-35f5-465e-b067-aacc22a9d864)
+
+Now close all currently opened windows and follow next step.
 
 ---Now we can start the Pytorch install---
 
-7. https://pytorch.org/get-started/locally/
+8. https://pytorch.org/get-started/locally/
 	
-	  Step1: "Start Locally"
+   Step1: "Start Locally"
    
-	Step2: "Stable 2.1.x"  --> "Windows" --> "Conda" --> "Python" --> "Cuda11.8"
+   Step2: "Stable 2.1.x"  --> "Windows" --> "Conda" --> "Python" --> "Cuda11.8"
 
-	Step3: "Copy the "Run this Command" "Conda ----------------/cud118"
+   Step3: "Copy the "Run this Command"
 
-	Step4. Open "Anoconda Powershell Prompt"
+--------------------------------------------------------------------------------------------------------
+	conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+--------------------------------------------------------------------------------------------------------
 
-	Step5: Paste the Command and enter
+   Step4. Open "Anoconda Powershell Prompt"
+
+   Step5: Paste the Command, Enter
 
   (This will take Approx 5mins)
   
 
-8. *Anoconda*
-Run Command
-    - conda install -c conda-forge ultralytics
+9.
+Run Next Commands:
+
+--------------------------------------------------------------------------------------------------------
+     conda install -c conda-forge ultralytics
       
    (This will take Approx 5-10mins)
    
-	  - conda install -c pytorch -c nvidia -c conda-forge pytorch torchvision pytorch-cuda=11.8 ultralytics
+--------------------------------------------------------------------------------------------------------
+     conda install -c pytorch -c nvidia -c conda-forge pytorch torchvision pytorch-cuda=11.8 ultralytics
       
-    (This will take Approx 5-20mins)
+   (This will take Approx 5-20mins)
+   
+--------------------------------------------------------------------------------------------------------
 
 Once that is done we can move onto creating the "Training Folder"
 
@@ -193,9 +205,9 @@ type: cd and paste PATH, as such.
 Press ENTER
 
 Now we are in the Directory of the Training Folder paste yolo command: 
-
-yolo task=detect mode=train imgsz=640 data=data.yaml epochs=1000 batch=16 name=             *input a name*
-
+--------------------------------------------------------------------------------------------------------
+	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=1000 batch=16 name=             *input a name*
+--------------------------------------------------------------------------------------------------------
 !!NOTE: The higher the batch the more GPU_Mem you will consume, therefore gameplays will be cut to 30FPS rendering gameplay unplayable so recommend no gampeplays while training.!!
 
 Once that starts you should get GPU_Mem usage as such.
@@ -213,23 +225,63 @@ Open Anaconda Powershell Prompt
 
 cd and paste folder PATH, ENTER.
 
+![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/f6b1117d-59a7-4d76-9ef2-768fadbf85ea)
+
+Now you are in the Directory of the Weights Folder. Copy NEXT YOLO Command.
+
 Paste Export Yolo command:
+--------------------------------------------------------------------------------------------------------
+	yolo export model=best.pt format=onnx
+--------------------------------------------------------------------------------------------------------
 
-yolo export model=best.pt format=onnx
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/487dba6b-5408-4c48-a6b4-939f2526cd0b)
 
 best.onnx will be generated in the "Weights Folder" which can now be rename for the game you've made it for. 
 
+![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/d7fac67c-0911-43cd-af88-85c1fc25830b)
+
 Drag and drop onnx file into Aimmy Folder-->bin-->model.
 
+CONGRATZ! You have made your very first ONNX file! Now go test it out in-game and refer others who has similar isues or questions, to this page if this helped you.
 
-Hope this helps.
 
 Any issue feel free to DM discord:  MentalEngineer#4729
 
-
-
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠑⡔⠈⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠰⡏⠉⠢⣀⠸⡎⠉⣦⠤⠤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣦⣄⠀⠀⠀⠀⠀⠈⠢⢄⠈⠣⠽⠀⣸⣠⡤⡏⠀⣳⠀⠀⠀⠘⠢⡙⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠑⡄⠀⢪⠞⢫⠁⡷⠖⣟⣇⠀⠀⠀⠀⠱⡌⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⢸⠚⢁⣠⡾⢖⡗⠚⠋⢹⡄⠀⠀⠀⠀⠇⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣶⣶⣾⣿⣿⣷⣶⣦⣄⡀⠀⠀⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⢠⠀⠈⢦⠉⠹⠀⠈⠇⠀⠀⠘⣷⣆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣹⣿⣿⣿⣿⣿⣿⡀⠀⣇⠘⡄⠀⠈⠳⣄⣀⠀⠀⢠⣄⣴⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠘⢆⠈⠂⠀⠀⠀⠀⢱⣴⣾⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢺⣇⣴⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⠑⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⣿⡿⠃⠈⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⣿⠋⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⡿⠋⠑⢄⠀⠀⠈⠣⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠸⠇⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⡿⢛⣭⣾⣼⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠉⢻⠀⠀⠀⠈⢧⠀⠀⠀⢹⡄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣄⣿⡿⠁⠠⢫⢏⣈⣿⡿⢹⣿⣿⣿⣿⣿⣇⣀⣀⣀⣀⣀⣀⣀⠀⠘⣇⠀⠀⠀⠘⢇⠀⠀⠀⡿⣄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀⠀⠀⠶⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠈⡡⢬⠻⠁⠀⠀⠈⠁⢸⢿⠁⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠉⠀⠀⢈⣲⣄⡀⠀⠈⠀⠀⢸⡄⠘⢆⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⢿⣿⣿⣿⣿⣿⣿⣰⠁⠀⣤⠀⠀⣶⠀⠀⠀⢈⡆⢠⡿⣿⡿⡿⣿⣿⣿⣿⣭⣤⣀⣀⢀⡴⠛⠉⠀⠀⢨⠁⠀⠀⠀⠀⠁⣠⡞⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢹⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢿⣿⣿⣿⢸⠀⠀⠉⠀⠀⠀⠀⣤⡶⠾⠓⠋⣼⡿⠱⣿⢸⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⣠⠞⠉⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠘⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣾⣿⣿⣿⣸⠶⠴⣮⡅⠀⢀⡤⢦⠀⠀⠀⠘⠁⢀⡼⣣⣿⡿⠟⠉⡼⠋⡿⠀⠀⠀⠀⠀⠀⣠⠏⠀⠀⠀⣰⠃⠀⠀⢀⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⢻⡇⠀⠀⢠⠖⠒⡡⠔⢺⠀⠀⠀⠀⢠⠯⣾⣿⣿⠀⠀⡸⠀⠀⡇⠀⠀⠀⠀⠀⡴⠃⢠⡆⠀⣰⠃⠀⠀⢀⣿⣧⣤⣤⣤⣀
+⠀⠀⠀⠀⠀⠀⠀⠈⠁⢸⣾⡇⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⡀⠀⠘⢭⡤⠤⠖⠋⠀⠀⠀⡀⠋⢀⡜⡉⡇⠀⠀⠁⠀⠀⡇⠀⠀⠀⣠⡞⠁⠀⢸⣥⠞⠁⠀⠀⠀⣾⡿⠉⢉⣽⣿⠟
+⠀⠀⢀⡀⠀⠀⠀⠀⠀⠘⠇⢱⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⢤⡀⠀⠀⠀⢀⣠⣴⣿⠀⣠⢎⠜⡇⡇⠀⠀⡀⠀⡼⠁⠤⠶⠛⠉⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠈⠀⣠⣿⠟⠁⠀
+⠀⠀⠀⠀⠑⡀⠀⠀⠀⠀⠀⣼⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡓⠒⢾⣿⢟⡟⠁⡴⢣⠎⠀⡇⡇⠀⠀⠃⣰⠃⠀⠀⠀⢀⣠⡴⠖⠋⠀⠀⠀⠀⠀⠀⠀⢀⣾⠟⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⢣⠀⠀⡀⠀⠀⠙⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⡇⠀⠈⣴⣫⢴⡞⣱⠃⠀⠀⢸⡇⠀⠀⢸⠃⠀⢀⡠⠞⡏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠉⠁⠀⠡⠠⢄⠀⠀⠀⠀⠀⢀⣀⣀⣤⡤⠤⠤⢴⣾⣷⣿⣽⠇⠁⣠⠾⠋⣠⠏⡔⣁⣴⡆⠀⢸⠇⢸⠀⢸⠀⠐⠉⠀⡼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⠇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⠀⠀⢰⠟⠋⠉⠀⠀⠀⢠⠶⣿⣾⣿⣿⡯⠤⠞⠁⢀⡼⢡⣾⣿⡽⠟⣿⠀⠸⠀⢸⠀⢸⡀⠀⠀⢠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠃⠀⠀⢀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⠀⢀⣾⡀⠀⢀⠀⠀⠀⡏⠀⣏⠋⠁⠀⢀⠀⠀⢠⠏⢠⠋⣿⣿⠀⣠⡿⠀⠀⠀⣿⠀⠈⡇⠀⣠⢿⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⠃⠀⠀⢠⠏⢳⡀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⢁⡏⠘⡇⠀⣸⡄⠀⠀⢱⠀⢸⠀⠀⠀⡜⠀⡰⠃⢠⠃⠀⠻⠟⠛⠋⠁⠀⠀⠀⢸⠀⠀⢳⣾⣿⡼⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⢃⡀⣀⠀⡇⠀⠀⢸⠀⢀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⠀⢸⠁⠀⣇⠀⢹⡇⠀⠀⠈⡇⠀⢧⠀⢀⠇⡼⠁⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠸⣯⠇⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡾⣿⠟⠀⣿⢐⡗⣾⢀⠃
+⠁⣹⡇⠀⠀⠀⠀⠀⠀⡔⠉⠀⠀⢸⠀⢀⣹⠀⢸⡇⠀⠀⠀⠹⡀⠘⡆⢸⡞⠁⢠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⠀⠀⣩⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣥⣿⠟⢱⣿⢸⡇⣿⠉⠀
+⠉⠛⠓⠮⠭⢭⠉⢀⣀⣀⠀⢀⣴⡿⠋⠉⠉⡆⢸⡇⠀⠀⠀⠀⢣⠀⢘⡞⠀⢠⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⠡⠒⠂⠐⠢⡀⡠⠒⠐⠒⠄⠐⠛⠉⠀⠀⢸⣽⠘⡇⣿⠀⢀
+⠉⠉⠒⢻⣷⠄⠀⠠⠤⢄⢰⢯⠞⠀⠀⠀⠀⢣⣸⠀⠀⠀⠀⠀⠘⣆⡞⠀⢀⠃⠀⠀⠀⠀⠀⣀⠄⠀⠀⠀⠀⠀⠀⠠⢾⡿⢋⠀⠀⠀⠀⠀⠈⣁⣀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣶⢠⡇⣿⡆⠁
+⠉⠁⠲⢺⣿⢒⣦⠴⠤⢀⣿⡏⠀⠀⠀⠀⠀⣸⡇⠀⠀⠀⠀⠀⠀⡜⠀⠀⠊⠀⠀⠀⢀⡴⠊⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⡇⠁⠀⠀⠀⠀⠀⠀⠀⠈⢃⠀⢀⠀⠀⠀⠀⠀⢸⣿⠨⡅⣿⡇⠀
+⠒⠒⠒⢺⠛⢺⣿⡥⠄⣼⢹⣀⣀⣠⣤⣀⣰⣿⠁⠀⠀⠀⠀⠀⡸⠀⠀⡄⠀⠀⣠⠔⠉⠀⠀⠀⠀⠀⠀⠀⢀⠔⠋⠀⠀⡇⢀⣀⡀⠀⠈⢹⢦⠀⠀⠀⢀⣀⡈⠒⡦⠤⠀⢸⡙⢰⡇⣿⡇⠀
+⠀⠀⠀⢸⣄⣈⣋⡀⡼⠓⠉⠁⠀⠀⠀⠈⠙⢷⡀⠐⡄⠀⠀⢰⠃⠀⡜⠀⣠⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢁⣠⠄⢀⡠⠇⠀⠆⠤⠭⣍⣙⣛⣶⣤⠤⠤⠤⢈⣉⣉⠉⠉⢹⣛⢰⡧⣿⡇⠀
+⠀⠀⠀⠀⠀⢸⠟⠀⡇⠀⢹⡄⣠⣴⣶⣶⣤⣼⠷⡀⠘⣆⢀⠇⠀⢰⡧⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⣠⡴⠚⠉⣠⣶⠫⣀⣉⣑⠆⠐⠒⠿⣿⣿⠽⠿⣉⣀⡒⠒⠒⠂⠭⠭⡗⠿⢸⡗⢻⣇⣒
+⠀⠀⠀⠀⠀⠈⠀⣰⢷⡄⢈⣿⣿⣿⣿⣿⣿⣇⠀⣙⣤⣬⣿⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣯⠕⠫⠤⠤⣀⣀⣈⣉⣉⣉⡉⠉⠒⠒⠒⠠⠬⠥⣬⣁⣍⣀⡇⠿⠘⡇⠸⣧⠤
+⠀⠀⠀⠀⠀⠀⠀⠻⢜⠁⣼⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠐⠒⠀⠤⠶⠤⠤⠤⠤⠀⣈⣉⣉⣉⠓⠒⠒⠒⣿⣿⡶⠄⡇⠀⢀⡆⢠⣿⠭
 
 
 
