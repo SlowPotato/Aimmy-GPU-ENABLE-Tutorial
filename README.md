@@ -118,6 +118,7 @@ Within the "images" Folder create two new Folders named "train" and "val".
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/f5566606-71e5-4914-b64f-7a3977788d74)
 
 Within the "labels" Folder create 2 new Folders named "train" and "val".
+
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b81049d3-2f1e-447d-bd1f-805f0cebddd0)
 
 Now open the data.yaml file as a .txt to edit.
