@@ -63,19 +63,19 @@ Now close all currently opened windows and follow next step.
 
 8. https://pytorch.org/get-started/locally/
 	
-   Step1: "Start Locally"
+Step1: "Start Locally"
    
-   Step2: "Stable 2.1.x"  --> "Windows" --> "Conda" --> "Python" --> "Cuda11.8"
+Step2: "Stable 2.1.x"  --> "Windows" --> "Conda" --> "Python" --> "Cuda11.8"
 
-   Step3: "Copy the "Run this Command"
+Step3: "Copy the "Run this Command"
 
 --------------------------------------------------------------------------------------------------------
 	conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 --------------------------------------------------------------------------------------------------------
 
-   Step4. Open "Anoconda Powershell Prompt"
+Step4. Open "Anoconda Powershell Prompt"
 
-   Step5: Paste the Command, Enter
+Step5: Paste the Command, Enter
 
   (This will take Approx 5mins)
   
