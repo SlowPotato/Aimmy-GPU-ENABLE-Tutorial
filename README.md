@@ -40,6 +40,7 @@ Open File Explore and go into you C: and locate *NVIDIA GPU COMPUTING TOOLKIT*
 Now going back to the files downloaded from earlier < bin, include and lib >
 
 Open the downloaded: "bin" folder copy all files and paste files directly into the "bin" folder in your C: 
+
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/ced83e89-d9db-4f36-8715-aeaba6209839)
 
 Do the same for both the "include" and the "lib" folders.
@@ -49,6 +50,7 @@ NOTE: The "lib" folder has another folder within itself called "x64" copy the fi
 Once completed, do the following below:
 
 Type "edit the system environment variables" on windows search and select "environment variables"
+
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/e11c0e41-9146-4f3b-bc42-0d07b8c1ca32)
 
 see if CUDA PATH and CUDA PATH 11.8 are in the System Variables if they are you should be good to proceed.
@@ -130,6 +132,7 @@ Copy the Folder PATH of your "train" folder and paste it in the data.yaml file a
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/88a45c91-797e-467b-bea1-1cbbbf5dbda0)
 
 Do the same for the "val" folder.
+
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b735923d-3431-48c1-942e-5b9380c596a0)
 
 Do not exit txt file, click "SAVE" before exiting the data.yaml file
@@ -178,9 +181,11 @@ Now locate the MODEL MASTER FILES in which was downloaded ealier.
 refer back to link: https://github.com/Babyhamsta/Aimmy/tree/master/Universalv3_web_model
 
 Copy all and drag and drop them into the drop bin.
+
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/6dda430a-4aa4-4565-b8f9-9cda0cc2b94d)
 
 This will make labeling enemy targets on images a bit easier. Place boxes on all targets on all images and once completed.
+
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/0c07d8f1-5e19-4744-84dc-cc97d4e8e769)
 
 
@@ -189,6 +194,7 @@ Go to "Actions" and "Export Annotations"
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/f37b1c5a-10c6-4324-a7b9-b3d9e19b3c0d)
 
 Once downloaded, export/copy/paste all labels into the "Training Folder"--> "labels" ---> "train" and "val"
+
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/16047efe-fc1b-4823-b2bc-0cc07de1166a)
 
 Once thats done. We can now start the training of images.
@@ -205,11 +211,12 @@ type: cd and paste PATH, as such.
 
 Press ENTER
 
-Now we are in the Directory of the Training Folder paste yolo command: 
+Now we are in the Directory of the Training Folder paste YOLO Command: 
 --------------------------------------------------------------------------------------------------------
 	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=1000 batch=16 name=             *input a name*
 --------------------------------------------------------------------------------------------------------
-!!NOTE: The higher the batch the more GPU_Mem you will consume, therefore gameplays will be cut to 30FPS rendering gameplay unplayable so recommend no gampeplays while training.!!
+
+!!NOTE: The higher the batch the more GPU_Mem you will consume, therefore gameplays will be cut to 30FPS rendering gameplay unplayable so recommend no gampeplays while training!!
 
 Once that starts you should get GPU_Mem usage as such.
 
