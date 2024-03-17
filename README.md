@@ -67,15 +67,13 @@ Step1: "Start Locally"
    
 Step2: "Stable 2.1.x"  --> "Windows" --> "Conda" --> "Python" --> "Cuda11.8"
 
-Step3: "Copy the "Run this Command"
+Step3: Open Anaconda Powershell Prompt and Copy the "Run this Command" which is basically this command below and paste it into Anaconda Powershell Prompt.
 
 --------------------------------------------------------------------------------------------------------
 	conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 --------------------------------------------------------------------------------------------------------
 
-Step4. Open "Anoconda Powershell Prompt"
-
-Step5: Paste the Command, Enter
+Step4. Once that one finishes do the same for the following commands below also.
 
   (This will take Approx 5mins)
   
