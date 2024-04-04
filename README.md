@@ -11,11 +11,8 @@
 4. https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.14-windows-x64-installer
 
 5. https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
-
-
-
+--- Enable PYTHON PATH [check box] before clicking "Next"/"Install" ---
    
-
 6. https://www.anaconda.com/download  ==> *make your PATH Enable with Python before completing install*
 
    ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
