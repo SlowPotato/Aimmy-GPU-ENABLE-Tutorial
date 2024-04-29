@@ -19,6 +19,7 @@
 
 7. https://developer.nvidia.com/cuda-11-8-0-download-archive
 
+(SKIP THIS NEXT PART AS ITS ONLY NEEDED IF YOU ARE MISSING CUDNN FILES) PLEASE GO TO STEP 8)
     and
 
    https://developer.nvidia.com/rdp/cudnn-archive    [Download cuDNN v8.9.6 (November 1st, 2023), for CUDA 11.x]
