@@ -215,25 +215,25 @@ Now we are in the Directory of the Training Folder paste YOLO Command:
 --------------------------------------------------------------------------------------------------------
 	(Basic Games)
 
-	yolo task=detect mode=train imgsz=640 data=CustomCharacterPath.yaml epochs=250 batch=16 name=
+	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=250 batch=16 name=
 
-	yolo task=detect mode=train imgsz=640 data=CustomCharacterPath.yaml epochs=500 batch=16 name=
+	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=500 batch=16 name=
 
-	yolo task=detect mode=train imgsz=640 data=CustomCharacterPath.yaml epochs=500 batch=30 name=
+	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=500 batch=30 name=
 
 
 
 	(Complex Games)
 
-	yolo task=detect mode=train imgsz=640 data=CustomCharacterPath.yaml epochs=750 batch=16 name=
+	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=750 batch=16 name=
 
-	yolo task=detect mode=train imgsz=640 data=CustomCharacterPath.yaml epochs=800 batch=30 name=
+	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=800 batch=30 name=
 
-	yolo task=detect mode=train imgsz=640 data=CustomCharacterPath.yaml epochs=1000 batch=16 name=
+	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=1000 batch=16 name=
 
-	yolo task=detect mode=train imgsz=640 data=CustomCharacterPath.yaml epochs=1000 batch=30 name=
+	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=1000 batch=30 name=
 
-	yolo task=detect mode=train imgsz=640 data=CustomCharacterPath.yaml epochs=1000 batch=50 name=
+	yolo task=detect mode=train imgsz=640 data=data.yaml epochs=1000 batch=50 name=
 
 
 
