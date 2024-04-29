@@ -1,5 +1,7 @@
 # Installing Aimmy with *GPU-ENABLE* Tutorial ==> Nvidia GPU ONLY
 
+-Same process for V1.5.2-V2 and newer-
+
 1. https://github.com/Babyhamsta/Aimmy/releases/download/v1.3.0/Aimmy1_3_0.zip       ---- EXTRACT to DESKTOP as a single Folder keeping all Contents in the Extracted folder ---
 
 2. There are newer versions, so download the lastest one.
