@@ -68,7 +68,8 @@ Step1: "Start Locally"
    
 Step2: "Stable 2.1.x"  --> "Windows" --> "Conda" --> "Python" --> "Cuda11.8"
 
-Step3: Open Anaconda Powershell Prompt and Copy the "Run this Command" which is basically this command below and paste it into Anaconda Powershell Prompt.
+Step3: Hit the windows Icon ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cd3e92da-9d85-4c79-87b2-5a733ffc696f)
+ and type Anaconda Powershell Prompt and Copy the "Run this Command" which is basically this command below and paste it into Anaconda Powershell Prompt.
 
 --------------------------------------------------------------------------------------------------------
 	conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
