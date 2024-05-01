@@ -19,7 +19,13 @@
 
    ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
 
-7. https://developer.nvidia.com/cuda-11-8-0-download-archive
+
+7. Version: 11.8:
+   https://developer.nvidia.com/cuda-11-8-0-download-archive
+
+   Version: 12.1
+   https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
+   
 
 (SKIP THIS NEXT PART AS ITS ONLY NEEDED IF YOU ARE MISSING CUDNN FILES) PLEASE GO TO STEP 8!
 
@@ -54,51 +60,65 @@ Type "edit the system environment variables" on windows search and select "envir
 
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/e11c0e41-9146-4f3b-bc42-0d07b8c1ca32)
 
-see if CUDA PATH and CUDA PATH 11.8 are in the System Variables if they are you should be good to proceed.
+See if CUDA PATH and CUDA PATH 11.8 are in the System Variables if they are you should be good to proceed.
 
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/fefba9a1-35f5-465e-b067-aacc22a9d864)
 
 Now close all currently opened windows and follow next step.
 
----Now we can start the Pytorch install---
+8.
+-------------------------------------------------------------------------------------------------------
+Now we can start the Pytorch install
+-------------------------------------------------------------------------------------------------------
 
-8. https://pytorch.org/get-started/locally/
-	
-Step1: "Start Locally"
-   
-Step2: "Stable 2.1.x"  --> "Windows" --> "Conda" --> "Python" --> "Cuda11.8"
+ Hit the windows Icon ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cd3e92da-9d85-4c79-87b2-5a733ffc696f)
+ and type Anaconda Powershell Prompt and Copy the "Command" below and paste it into Anaconda Powershell Prompt.
 
-Step3: Hit the windows Icon ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cd3e92da-9d85-4c79-87b2-5a733ffc696f)
- and type Anaconda Powershell Prompt and Copy the "Run this Command" which is basically this command below and paste it into Anaconda Powershell Prompt.
+
+
+PLEASE USE THE CORRECT VERSION YOU HAVE DOWNLOADED:
+--------------------------------------------------------------------------------------------------------
+Version 11.8
+
+    conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+
+ Version 12.1
+
+    conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+
+(This will take Approx 5-10mins)
 
 --------------------------------------------------------------------------------------------------------
-	conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
---------------------------------------------------------------------------------------------------------
-
-Step4. Once that one finishes do the same for the following commands below also.
-
-  (This will take Approx 5mins)
+Once finished do the same for the following commands below also.
   
-
-9.
 Run Next Commands:
 
+Ultralytics
 --------------------------------------------------------------------------------------------------------
+
      conda install -c conda-forge ultralytics
-      
-   (This will take Approx 5-10mins)
-   
+     
+--------------------------------------------------------------------------------------------------------      
+
+PLEASE USE THE CORRECT VERSION YOU HAVE DOWNLOADED:   
 --------------------------------------------------------------------------------------------------------
-     conda install -c pytorch -c nvidia -c conda-forge pytorch torchvision pytorch-cuda=11.8 ultralytics
-      
-   (This will take Approx 5-20mins)
+Version 11.8
+
+    conda install -c pytorch -c nvidia -c conda-forge pytorch torchvision pytorch-cuda=11.8 ultralytics
+
+Version 12.1
+
+    conda install -c pytorch -c nvidia -c conda-forge pytorch torchvision pytorch-cuda=12.1 ultralytics
+
+    
+(This will take Approx 5-10mins)
    
 --------------------------------------------------------------------------------------------------------
 
 Once that is done we can move onto creating the "Training Folder"
-
-----TRANING FOLDER----
-
+--------------------------------------------------------------------------------------------------------
+TRANING FOLDER
+--------------------------------------------------------------------------------------------------------
 Download the data.yaml file here
 
  https://www.mediafire.com/file_premium/vv75ynzpromgub4/data.yaml/file
@@ -266,7 +286,7 @@ Now you are in the Directory of the Weights Folder. Copy NEXT YOLO Command.
 
 Paste Export Yolo command:
 --------------------------------------------------------------------------------------------------------
-	yolo export model=best.pt format=onnx
+    yolo export model=best.pt format=onnx
 --------------------------------------------------------------------------------------------------------
 
 ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/487dba6b-5408-4c48-a6b4-939f2526cd0b)
