@@ -21,13 +21,15 @@
 
 
 7.
-   Choose a Version Below: 
+   Choose a Version Below:
+  
    Version: 11.8: (Recommended)
    https://developer.nvidia.com/cuda-11-8-0-download-archive
 
    Version: 12.1 (Experimental)
    https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
    
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 (SKIP THIS NEXT PART AS ITS ONLY NEEDED IF YOU ARE MISSING CUDNN FILES) PLEASE GO TO STEP 8!
 
@@ -68,9 +70,9 @@ See if CUDA PATH and CUDA PATH 11.8 are in the System Variables if they are you 
 
 Now close all currently opened windows and follow next step.
 
-8.
+
 -------------------------------------------------------------------------------------------------------
-Now we can start the Pytorch install
+8.Now we can start the Pytorch install
 -------------------------------------------------------------------------------------------------------
 
  Hit the windows Icon ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cd3e92da-9d85-4c79-87b2-5a733ffc696f)
