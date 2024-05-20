@@ -20,10 +20,12 @@
    ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
 
 
-7. Version: 11.8:
+7.
+   Choose a Version Below: 
+   Version: 11.8: (Recommended)
    https://developer.nvidia.com/cuda-11-8-0-download-archive
 
-   Version: 12.1
+   Version: 12.1 (Experimental)
    https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
    
 
@@ -78,11 +80,11 @@ Now we can start the Pytorch install
 
 PLEASE USE THE CORRECT VERSION YOU HAVE DOWNLOADED:
 --------------------------------------------------------------------------------------------------------
-Version 11.8
+Version 11.8 (Recommended)
 
     conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 
- Version 12.1
+ Version 12.1 (Experimental)
 
     conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 
