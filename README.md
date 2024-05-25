@@ -126,6 +126,8 @@ TRANING FOLDER
 
 https://github.com/SlowPotato/TrainingFolder  [this link will take you to a fully setup Traning Folder already]
 
+[ SKIP THE TRAINING FOLDER STEPS BELOW IF YOU DOWNLOADED THE LINK ABOVE]
+
 Download the data.yaml file here
 
  https://www.mediafire.com/file_premium/vv75ynzpromgub4/data.yaml/file
