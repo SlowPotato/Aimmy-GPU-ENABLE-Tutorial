@@ -124,7 +124,7 @@ Once that is done we can move onto creating the "Training Folder"
 TRANING FOLDER
 --------------------------------------------------------------------------------------------------------
 
-https://github.com/SlowPotato/TrainingFolder  [this link will take you to a fully setup Traning Fodler already]
+https://github.com/SlowPotato/TrainingFolder  [this link will take you to a fully setup Traning Folder already]
 
 Download the data.yaml file here
 
