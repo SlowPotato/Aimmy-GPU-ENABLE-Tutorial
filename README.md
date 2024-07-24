@@ -116,7 +116,9 @@ Version 12.1
 
     
 (This will take Approx 5-10mins)
-   
+--------------------------------------------------------------------------------------------------------
+
+GPU NOT ENABLING??
 --------------------------------------------------------------------------------------------------------
 
 ***(GPU IS SHOWING TRUE IN PYTHON TERMINAL BUT IN TRAINING GPU IS STILL DISABLED AND ONLY USING CPU?)***
