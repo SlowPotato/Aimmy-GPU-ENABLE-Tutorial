@@ -119,6 +119,12 @@ Version 12.1
    
 --------------------------------------------------------------------------------------------------------
 
+***(GPU IS SHOWING TRUE IN PYTHON TERMINAL BUT IN TRAINING GPU IS STILL DISABLED AND ONLY USING CPU?)***
+
+    pip install torchvision==0.18.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html
+
+--------------------------------------------------------------------------------------------------------
+
 Once that is done we can move onto creating the "Training Folder"
 --------------------------------------------------------------------------------------------------------
 TRANING FOLDER
