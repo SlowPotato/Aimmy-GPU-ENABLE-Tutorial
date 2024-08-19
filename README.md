@@ -8,21 +8,22 @@
 
 	Download these also: "   https://github.com/Babyhamsta/Aimmy/tree/master/Universalv3_web_model  "      ---- These Master files will be needed later-----
 
-4. https://aka.ms/vs/17/release/vc_redist.x64.exe
+3. https://aka.ms/vs/17/release/vc_redist.x64.exe
 
-5. https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.14-windows-x64-installer
+4. https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.14-windows-x64-installer
 
-6. https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
---- Enable PYTHON PATH [check box] before clicking "Next"/"Install" ---
+5. https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
    
-7. https://www.anaconda.com/download  ==> *make your PATH Enable with Python before completing install*
+--Enable PYTHON PATH [check box] before clicking "Next"/"Install"--
+   
+6. https://www.anaconda.com/download  ==> *make your PATH Enable with Python before completing install*
 
    ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
    
-Auto Trainer.bat file: https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/blob/main/README.md#auto-trainerexport-okay-so-you-want-to-be-a-lazy-bum-and-avoid-copy-and-pasting-yolo-commands-everytime-you-make-new-model
+- AUTO TRAIN/EXPORT.bat file: https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/blob/main/README.md#auto-trainerexport-okay-so-you-want-to-be-a-lazy-bum-and-avoid-copy-and-pasting-yolo-commands-everytime-you-make-new-model
 
 
-8.
+7.
    Choose a Version Below:
   
    Version: 11.8: (Recommended)
@@ -74,7 +75,7 @@ Now close all currently opened windows and follow next step.
 
 
 -------------------------------------------------------------------------------------------------------
-9.Now we can start the Pytorch install
+8.Now we can start the Pytorch install
 -------------------------------------------------------------------------------------------------------
 
  Hit the windows Icon ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cd3e92da-9d85-4c79-87b2-5a733ffc696f)
