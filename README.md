@@ -1,4 +1,4 @@
-# Installing Aimmy with *GPU-ENABLE* Tutorial ==> Nvidia GPU ONLY
+# Aimmy with *GPU-ENABLE* Training Models ==> Nvidia GPU ONLY
 
 - Same process for V1.5.2 - V2.0 and newer v2.1.5 -
 
