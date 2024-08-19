@@ -19,11 +19,10 @@
 
    ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
 
--Auto Trainer.bat file: 
+-Auto Trainer.bat file: https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/blob/main/README.md#auto-trainerexport-okay-so-you-want-to-be-a-lazy-bum-and-avoid-copy-and-pasting-yolo-commands-everytime-you-make-new-model
 
 
-
-9.
+8.
    Choose a Version Below:
   
    Version: 11.8: (Recommended)
@@ -75,7 +74,7 @@ Now close all currently opened windows and follow next step.
 
 
 -------------------------------------------------------------------------------------------------------
-8.Now we can start the Pytorch install
+9.Now we can start the Pytorch install
 -------------------------------------------------------------------------------------------------------
 
  Hit the windows Icon ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cd3e92da-9d85-4c79-87b2-5a733ffc696f)
