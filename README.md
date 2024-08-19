@@ -18,8 +18,8 @@
 7. https://www.anaconda.com/download  ==> *make your PATH Enable with Python before completing install*
 
    ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
-
--Auto Trainer.bat file: https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/blob/main/README.md#auto-trainerexport-okay-so-you-want-to-be-a-lazy-bum-and-avoid-copy-and-pasting-yolo-commands-everytime-you-make-new-model
+   
+Auto Trainer.bat file: https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/blob/main/README.md#auto-trainerexport-okay-so-you-want-to-be-a-lazy-bum-and-avoid-copy-and-pasting-yolo-commands-everytime-you-make-new-model
 
 
 8.
