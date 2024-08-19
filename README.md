@@ -1,26 +1,29 @@
 # Installing Aimmy with *GPU-ENABLE* Tutorial ==> Nvidia GPU ONLY
 
--Same process for V1.5.2-V2 and newer-
+- Same process for V1.5.2 - V2.0 and newer v2.1.5 -
 
-1. https://github.com/Babyhamsta/Aimmy/releases/download/v1.3.0/Aimmy1_3_0.zip       ---- EXTRACT to DESKTOP as a single Folder keeping all Contents in the Extracted folder ---
+1. https://github.com/Babyhamsta/Aimmy/releases ---- EXTRACT to DESKTOP as a single Folder keeping all Contents in the Extracted folder ---
 
 2. There are newer versions, so download the lastest one.
 
 	Download these also: "   https://github.com/Babyhamsta/Aimmy/tree/master/Universalv3_web_model  "      ---- These Master files will be needed later-----
 
-3. https://aka.ms/vs/17/release/vc_redist.x64.exe
+4. https://aka.ms/vs/17/release/vc_redist.x64.exe
 
-4. https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.14-windows-x64-installer
+5. https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.14-windows-x64-installer
 
-5. https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
+6. https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
 --- Enable PYTHON PATH [check box] before clicking "Next"/"Install" ---
    
-6. https://www.anaconda.com/download  ==> *make your PATH Enable with Python before completing install*
+7. https://www.anaconda.com/download  ==> *make your PATH Enable with Python before completing install*
 
    ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
 
+-Auto Trainer.bat file: 
 
-7.
+
+
+9.
    Choose a Version Below:
   
    Version: 11.8: (Recommended)
@@ -31,7 +34,7 @@
    
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-(SKIP THIS NEXT PART AS ITS ONLY NEEDED IF YOU ARE MISSING CUDNN FILES) PLEASE GO TO STEP 8!
+(SKIP THIS NEXT PART AS ITS ONLY NEEDED IF YOU ARE MISSING CUDNN FILES) PLEASE GO TO STEP 8!)
 
 
 
@@ -325,12 +328,41 @@ https://github.com/SlowPotato/AutoTrainer.git
 CONGRATZ! You have made your very first ONNX file! Now go test it out in-game and refer others who has similar issues or questions, to this page if this helped you. 
 
 (NOTE!: You will have to make your own CFG file as you will have to trial and error test which settings on Aimmy works best for your made Model) - Same applies for AIMMY version V2 and Newer -
---------------------------------------------------------------------------------------------------------
+
 NOTE: I dont mind remote support using AnyDesk, if you prefer I do the install for you instead to avoid any issues but that will be up to you.
+
+
+ERRORS!?!
 --------------------------------------------------------------------------------------------------------
 
-Any issue feel free to DM discord:  MentalEngineer#4729
+Missing "Modulenotfounderror: No Module Named ‘Cv2':
+-
+Run this Command:
+- pip3 install opencv-python
 
+--------------------------------------------------------------------------------------------------------
+“torchvision:nms” errors, its a very frequent error and support should beware of these for training errors." --> Python 3.12/CudNN 12.1+ (ONLY)
+-
+Run this Command: 
+- Pip Freeze
+
+Look for these: 
+torch==2.1.0+cu121
+torchaudio==2.1.0+cu121
+torchvision==0.17.1
+
+If 'torchvison' is not version 0.17.1
+-
+Run this Command: 
+- pip install torchvision==0.17.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html
+
+If after installing same error
+-
+Run this Command: 
+- pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 --force-reinstall --no-cache
+----------------------------------------------------------------------------------------------------------
+-Any issue feel free to DM discord:  MentalEngineer#4729
+-
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠑⡔⠈⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠰⡏⠉⠢⣀⠸⡎⠉⣦⠤⠤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣦⣄⠀⠀⠀⠀⠀⠈⠢⢄⠈⠣⠽⠀⣸⣠⡤⡏⠀⣳⠀⠀⠀⠘⠢⡙⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
