@@ -283,7 +283,7 @@ Now we are in the Directory of the Training Folder paste YOLO Command:
 
 --------------------------------------------------------------------------------------------------------
 
-!!NOTE: The higher the batch the more GPU_Mem you will consume, therefore gameplays will be cut to 30FPS rendering gameplay unplayable so recommend no gampeplays while training!!
+!!NOTE: The higher the batch the more GPU_Mem you will consume, therefore gameplays will be cut to 30FPS rendering gameplay unplayable so recommend no gameplays while training!!
 
 Once that starts you should get GPU_Mem usage as such.
 
