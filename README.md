@@ -11,19 +11,24 @@
 3. https://aka.ms/vs/17/release/vc_redist.x64.exe
 
 4. https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.14-windows-x64-installer
+   
+-(If using Python3.11 use 11.8 / If using Python3.12 use 12.1)-
 
-5. https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
+5. Python3.11 https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
+
+6. Python3.12
+https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe
    
 --Enable PYTHON PATH [check box] before clicking "Next"/"Install"--
    
-6. https://www.anaconda.com/download  ==> *make your PATH Enable with Python before completing install*
+7. https://www.anaconda.com/download  ==> *make your PATH Enable with Python before completing install*
 
    ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/b0f83e00-fea2-4a71-b58c-0cb032c58fcd)
    
 - AUTO TRAIN/EXPORT.bat file: https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/blob/main/README.md#auto-trainerexport-okay-so-you-want-to-be-a-lazy-bum-and-avoid-copy-and-pasting-yolo-commands-everytime-you-make-new-model
 
 
-7.
+8.
    Choose a Version Below:
   
    Version: 11.8: (Recommended)
@@ -33,7 +38,7 @@
    https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
    
 ----
-(SKIP THIS NEXT PART AS ITS ONLY NEEDED IF YOU ARE MISSING CUDNN FILES) PLEASE GO TO STEP 8!)
+(SKIP THIS NEXT PART AS ITS ONLY NEEDED IF YOU ARE MISSING CUDNN FILES) PLEASE GO TO STEP 9!)
 --
 
 
@@ -74,7 +79,7 @@ Now close all currently opened windows and follow next step.
 
 
 -------------------------------------------------------------------------------------------------------
-8.Now we can start the Pytorch install
+9.Now we can start the Pytorch install
 -------------------------------------------------------------------------------------------------------
 
  Hit the windows Icon ![image](https://github.com/SlowPotato/Aimmy-GPU-ENABLE-Tutorial/assets/152599873/cd3e92da-9d85-4c79-87b2-5a733ffc696f)
@@ -127,7 +132,7 @@ GPU NOT ENABLING??
 
     Pip freeze
     
-Inside the Anaconda Terminal and scroll down until you see Torchvision "versions" specific version require specific commands.
+Inside the Anaconda Terminal, scroll down until you see Torch and Torchvision "versions" specific version require specific commands.
 ------------------------------------------------
 Resolving "torchvision " Errors in PyTorch Training.
 “torchvision:nms” errors, its a very frequent error and support should beware of these for training errors.
@@ -137,18 +142,16 @@ torch==2.1.0+cu121
 torchaudio==2.1.0+cu121
 torchvision==0.17.1
 
-you should notice how they dont have +cu121 on torchvision.. to fix this...
+(you should notice how they dont have +cu121 on torchvision.. to fix this...)
 
 
 pip install torchvision==0.17.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html
 -
 Remember that 0.17.1 might not be the version they’re using, you’ll see the version they use in pip freeze, change the version as needed.
 
-
 pip install torchvision==0.19.0+cu121 -f https://download.pytorch.org/whl/torch_stable.html
 -
- If not Torchvision error and just using CPU during training.
-
+ If not sure if Torchvision error and just using CPU during training.
 
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 --force-reinstall --no-cache
 -
@@ -355,7 +358,7 @@ NOTE: I dont mind remote support using AnyDesk, if you prefer I do the install f
 
 ERRORS!?!
 --------------------------------------------------------------------------------------------------------
-
+(Py3.11/Cuda11.8 only)
 Missing "Modulenotfounderror: No Module Named ‘Cv2':
 -
 Run this Command:
