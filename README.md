@@ -88,7 +88,7 @@ Version 11.8 (Recommended)
 
     conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 
- Version 12.1 (Experimental)
+ Version 12.1 (Newest)
 
     conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 
@@ -125,12 +125,34 @@ GPU NOT ENABLING??
 
 ***(GPU IS SHOWING TRUE IN PYTHON TERMINAL BUT IN TRAINING GPU IS STILL DISABLED AND ONLY USING CPU?)***
 
-    pip install torchvision==0.18.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html
+    Pip freeze
+    
+Inside the Anaconda Terminal and scroll down until you see Torchvision "versions" specific version require specific commands.
+------------------------------------------------
+Resolving "torchvision " Errors in PyTorch Training.
+“torchvision:nms” errors, its a very frequent error and support should beware of these for training errors.
 
---------------------------------------------------------------------------------------------------------
+This problem occurs when their pip freeze looks like this,
+torch==2.1.0+cu121
+torchaudio==2.1.0+cu121
+torchvision==0.17.1
 
-Once that is done we can move onto creating the "Training Folder"
---------------------------------------------------------------------------------------------------------
+you should notice how they dont have +cu121 on torchvision.. to fix this...
+
+
+pip install torchvision==0.17.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html
+-
+Remember that 0.17.1 might not be the version they’re using, you’ll see the version they use in pip freeze, change the version as needed.
+
+
+pip install torchvision==0.19.0+cu121 -f https://download.pytorch.org/whl/torch_stable.html
+-
+ If not Torchvision error and just using CPU during training.
+
+
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 --force-reinstall --no-cache
+-
+
 TRANING FOLDER
 --------------------------------------------------------------------------------------------------------
 
@@ -340,26 +362,6 @@ Run this Command:
 - pip3 install opencv-python
 
 --------------------------------------------------------------------------------------------------------
-“torchvision:nms” errors, its a very frequent error and support should beware of these for training errors." --> Python 3.12/CudNN 12.1+ (ONLY)
--
-Run this Command: 
-- Pip Freeze
-
-Look for these: 
-torch==2.1.0+cu121
-torchaudio==2.1.0+cu121
-torchvision==0.17.1
-
-If 'torchvison' is not version 0.17.1
--
-Run this Command: 
-- pip install torchvision==0.17.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html
-
-If after installing same error
--
-Run this Command: 
-- pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 --force-reinstall --no-cache
-----------------------------------------------------------------------------------------------------------
 -Any issue feel free to DM discord:  MentalEngineer#4729
 -
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠑⡔⠈⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
