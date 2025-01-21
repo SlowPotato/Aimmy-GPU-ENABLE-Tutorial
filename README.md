@@ -32,10 +32,9 @@
    Version: 12.1 (Newest)
    https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
    
------------------------------------------------------------------------------------------------------------------------------------------
-
+----
 (SKIP THIS NEXT PART AS ITS ONLY NEEDED IF YOU ARE MISSING CUDNN FILES) PLEASE GO TO STEP 8!)
-
+--
 
 
    https://developer.nvidia.com/rdp/cudnn-archive    [Download cuDNN v8.9.6 (November 1st, 2023), for CUDA 11.x]
