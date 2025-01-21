@@ -29,7 +29,7 @@
    Version: 11.8: (Recommended)
    https://developer.nvidia.com/cuda-11-8-0-download-archive
 
-   Version: 12.1 (Experimental)
+   Version: 12.1 (Newest)
    https://developer.nvidia.com/cuda-12-1-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
    
 -----------------------------------------------------------------------------------------------------------------------------------------
